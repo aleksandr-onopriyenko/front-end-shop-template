@@ -1,1 +1,152 @@
+@use "variables" as *;
 
+.navbar {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 26px 1rem;
+  font-size: 19.2px;
+  &-collapse {
+    justify-content: end;
+  }
+
+  &-nav {
+    display: flex;
+
+    @media (min-width: 992px) {
+      & > .nav-item {
+        border-right: 1px solid $color-dark;
+        &:first-child {
+          border-left: 1px solid $color-dark;
+        }
+
+        &.show {
+          background-color: $color-dark;
+          border: 0;
+          .nav-link {
+            color: $color-light;
+
+            &:hover {
+              color: $color-light;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-light &-nav {
+    .nav-item.active > .nav-link,
+    .nav-item > .nav-link:hover {
+      color: #333;
+    }
+    .nav-item > .nav-link {
+      white-space: nowrap;
+      color: $color-dark;
+
+      @media (min-width: 992px) {
+        padding-left: 1.67rem;
+        padding-right: 1.65rem;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $color-dark;
+    border: 0;
+    border-radius: 0;
+    top: calc(100% - 1px);
+    left: -1px;
+  }
+
+  .dropdown-item {
+    color: $color-light;
+
+    &:hover {
+      color: $color-dark;
+    }
+  }
+}
+
+.form-inline {
+  display: inline-flex;
+  width: 85.4%;
+  border: 1px solid $color-dark;
+  padding: 3px 4px 2px 6px;
+
+  @media (max-width: 992px) {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  @media (min-width: 992px) {
+    display: flex;
+    width: 218px;
+    margin-left: 33px;
+    padding: 3px 5px 2.5px 6px;
+  }
+  .form-control {
+    font-size: 19.2px;
+
+    &,
+    &:focus {
+      border: none;
+      background: none;
+      box-shadow: none;
+    }
+
+    @media (min-width: 576px) {
+      flex-grow: 1;
+      flex-basis: 75%;
+      width: 100%;
+      padding-left: 6px;
+      padding-bottom: 7px;
+    }
+  }
+}
+
+.navbar-collapse .btn {
+  padding: 0;
+
+  background: $color-dark;
+  border-radius: 0;
+  border-color: $color-dark;
+  color: $color-light;
+  font-size: 16px;
+
+  &:hover {
+    border-color: $color-light;
+    background-color: $color-light;
+    color: $color-dark;
+  }
+
+  & > i {
+    padding: 10px;
+  }
+
+  &-cart {
+    background-color: $color-light;
+    border-color: $color-light;
+
+    color: $color-dark;
+    border-radius: 0;
+    margin-left: 30px;
+    padding: 11px 10.5px 10.5px;
+    text-align: center;
+
+    &:hover {
+      border-color: $color-dark;
+      background-color: $color-dark;
+      color: $color-light;
+    }
+
+    @media (max-width: 992px) {
+      margin-top: -10px;
+      margin-left: 29px;
+      // margin-bottom: 7px;
+    }
+
+    & > i {
+      padding: 0;
+      font-size: 24px;
+    }
+  }
+}

@@ -6,6 +6,10 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
   <title>SHOP-TEMPLATE</title>
   <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -14,6 +18,54 @@
 
 <body>
 
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/icon-3.png" alt="logo img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
+                <a class="dropdown-item" href="#">Sit amet</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Consectetur adipisicing </a>
+                <a class="dropdown-item" href="#">Architecto consequatur</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Payment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shipping</a>
+            </li>
+          </ul>
+          <form class="form-inline">
+            <input class="form-control " type="search" placeholder="search" aria-label="Search">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <button class="btn btn-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+  </header>
 
 
   <script src="libs/jquery/dist/jquery.min.js"></script>

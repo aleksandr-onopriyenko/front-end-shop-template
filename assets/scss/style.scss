@@ -1,9 +1,9 @@
-@import "libs/bootstrap/scss/bootstrap";
+@use "libs/bootstrap/scss/bootstrap";
+@forward "variables";
 
-@import "variables";
-@import "bootstrap-theming";
-@import "header";
-@import "common";
-@import "main";
-@import "aside";
-@import "footer";
+@use "bootstrap-theming";
+@use "header";
+@use "common";
+@use "main";
+@use "aside";
+@use "footer";
