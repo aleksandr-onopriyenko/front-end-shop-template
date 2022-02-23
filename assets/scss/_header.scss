@@ -1,6 +1,12 @@
 @use "variables" as *;
 
 .header {
-  // padding: 26px 0 26px;
-  background-color: rgba($color-light, 0.8);
+  &-nav {
+    background-color: rgba($color-light, 0.8);
+  }
+
+  &-carousel {
+    background-color: rgba(#000, 0.3);
+    border-bottom: 1px solid $color-light;
+  }
 }

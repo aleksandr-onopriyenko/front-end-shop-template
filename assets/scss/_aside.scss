@@ -1,1 +1,41 @@
+@use "variables" as *;
 
+.sidebar {
+  &-form {
+    padding: 15px 30px 30px;
+    color: $color-light;
+    font-size: 1.25rem;
+
+    @media (min-width: 992px) {
+      border-right: 1px solid $color-light;
+      background-color: rgba($color-light, 0.25);
+    }
+
+    &-item {
+      margin: 10px 0;
+      padding-left: 28px;
+    }
+
+    & fieldset {
+      margin-bottom: 16px;
+    }
+
+    & legend {
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    &-actions {
+      &__show-more {
+        display: block;
+        color: $color-light;
+        margin-bottom: 30px;
+      }
+
+      &__btn {
+        background-color: $color-dark;
+        border-color: $color-light;
+      }
+    }
+  }
+}

@@ -19,53 +19,207 @@
 <body>
 
   <header class="header">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <img src="assets/img/icon-3.png" alt="logo img">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Products
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
-                <a class="dropdown-item" href="#">Sit amet</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Consectetur adipisicing </a>
-                <a class="dropdown-item" href="#">Architecto consequatur</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Payment</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Shipping</a>
-            </li>
-          </ul>
-          <form class="form-inline">
-            <input class="form-control " type="search" placeholder="search" aria-label="Search">
-            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-          </form>
-          <button class="btn btn-cart">
-            <i class="fas fa-shopping-cart"></i>
+    <div class="header-nav">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/icon-3.png" alt="logo img">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
-      </nav>
-    </div>
 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
+                  <a class="dropdown-item" href="#">Sit amet</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Consectetur adipisicing </a>
+                  <a class="dropdown-item" href="#">Architecto consequatur</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Payment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shipping</a>
+              </li>
+            </ul>
+            <form class="form-inline">
+              <input class="form-control " type="search" placeholder="search" aria-label="Search">
+              <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="btn btn-cart">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="header-carousel">
+      <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/slide.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Slide #1</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/slide.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Slide #2</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/slide.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Slide #3</h2>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
   </header>
+
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <main class="col-12 col-lg-9 order-lg-2">main</main>
+        <aside class="col-12 col-lg-3 order-lg-1 sidebar">
+          <form action="/" class="sidebar-form">
+            <fieldset>
+              <legend>Device type</legend>
+
+              <div class="sidebar-form-item custom-control custom-checkbox">
+                <input class="sidebar-form-item-input custom-control-input" type="checkbox" value=""
+                  id="check-device-laptop">
+                <label class="sidebar-form-item-label custom-control-label" for="check-device-laptop">
+                  Laptop
+                </label>
+              </div>
+              <div class="sidebar-form-item custom-control custom-checkbox">
+                <input class="sidebar-form-item-input custom-control-input" type="checkbox" value=""
+                  id="check-device-tablet">
+                <label class="sidebar-form-item-label custom-control-label" for="check-device-tablet">
+                  Tablet
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Color</legend>
+
+              <div class="sidebar-form-item custom-control custom-checkbox">
+                <input class="sidebar-form-item-input custom-control-input" type="checkbox" value=""
+                  id="check-color-black">
+                <label class="sidebar-form-item-label custom-control-label" for="check-color-black">
+                  Black
+                </label>
+              </div>
+              <div class="sidebar-form-item custom-control custom-checkbox">
+                <input class="sidebar-form-item-input custom-control-input" type="checkbox" value=""
+                  id="check-color-red">
+                <label class="sidebar-form-item-label custom-control-label" for="check-color-red">
+                  Red
+                </label>
+              </div>
+              <div class="sidebar-form-item custom-control custom-checkbox">
+                <input class="sidebar-form-item-input custom-control-input" type="checkbox" value=""
+                  id="check-color-blue">
+                <label class="sidebar-form-item-label custom-control-label" for="check-color-blue">
+                  Green
+                </label>
+              </div>
+              <div class="sidebar-form-item custom-control custom-checkbox">
+                <input class="sidebar-form-item-input custom-control-input" type="checkbox" value=""
+                  id="check-color-green">
+                <label class="sidebar-form-item-label custom-control-label" for="check-color-green">
+                  Blue
+                </label>
+              </div>
+              <div class="sidebar-form-item custom-control custom-checkbox">
+                <input class="sidebar-form-item-input custom-control-input" type="checkbox" value=""
+                  id="check-color-orange">
+                <label class="sidebar-form-item-label custom-control-label" for="check-color-orange">
+                  Orange
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>RAM</legend>
+
+              <div class="sidebar-form-item custom-control custom-checkbox">
+                <input class="sidebar-form-item-input custom-control-input" type="checkbox" value="" id="check-ram-1gb">
+                <label class="sidebar-form-item-label custom-control-label" for="check-ram-1gb">
+                  1GB
+                </label>
+              </div>
+              <div class="sidebar-form-item custom-control custom-checkbox">
+                <input class="sidebar-form-item-input custom-control-input" type="checkbox" value="" id="check-ram-2gb">
+                <label class="sidebar-form-item-label custom-control-label" for="check-ram-2gb">
+                  2GB
+                </label>
+              </div>
+              <div class="sidebar-form-item custom-control custom-checkbox">
+                <input class="sidebar-form-item-input custom-control-input" type="checkbox" value="" id="check-ram-4gb">
+                <label class="sidebar-form-item-label custom-control-label" for="check-ram-4gb">
+                  4GB
+                </label>
+              </div>
+              <div class="sidebar-form-item custom-control custom-checkbox">
+                <input class="sidebar-form-item-input custom-control-input" type="checkbox" value="" id="check-ram-6gb">
+                <label class="sidebar-form-item-label custom-control-label" for="check-ram-6gb">
+                  6GB
+                </label>
+              </div>
+              <div class="sidebar-form-item custom-control custom-checkbox">
+                <input class="sidebar-form-item-input custom-control-input" type="checkbox" value="" id="check-ram-8gb">
+                <label class="sidebar-form-item-label custom-control-label" for="check-ram-8gb">
+                  8GB
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="sidebar-form-actions btn-group-lg">
+              <a href="#" class="sidebar-form-actions__show-more">Show more options...</a>
+              <button type="submit" class="btn btn-sm btn-block btn-primary sidebar-form-actions__btn">Submit</button>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+
+
 
 
   <script src="libs/jquery/dist/jquery.min.js"></script>
