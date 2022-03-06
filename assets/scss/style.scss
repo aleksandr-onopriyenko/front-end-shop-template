@@ -1,6 +1,6 @@
-@use "libs/bootstrap/scss/bootstrap";
-@forward "variables";
+@use "../../libs/bootstrap/scss/bootstrap.scss";
 
+@forward "variables";
 @use "bootstrap-theming";
 @use "header";
 @use "common";
