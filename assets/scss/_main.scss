@@ -1,1 +1,177 @@
+@use "variables" as *;
 
+.main {
+  &-header {
+    display: flex;
+    flex-wrap: nowrap;
+
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &-cards-item {
+    margin-bottom: 24px;
+  }
+
+  &-cards-actions {
+    margin-top: 5px;
+    padding-bottom: 26px;
+
+    @media (max-width: 768px) {
+      padding-bottom: 27px;
+    }
+    a {
+      color: $color-light;
+    }
+  }
+}
+
+.card {
+  margin-bottom: 6px;
+
+  border: 1px solid $color-light;
+  border-radius: 0;
+  background: none;
+
+  &-top {
+    position: relative;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    height: 180px;
+
+    background-color: rgba($color-light, 0.75);
+    &__image {
+      @media (min-width: 768px) and (max-width: 1024px) {
+        margin-left: -1px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+      }
+    }
+    &__actions {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      .btn {
+        display: flex;
+        justify-content: center;
+
+        width: 30px;
+        height: 30px;
+
+        border-color: $color-dark;
+        background-color: transparent;
+
+        &:last-child {
+          margin-top: 5px !important;
+        }
+
+        &:hover {
+          background-color: $color-dark;
+
+          i {
+            color: $color-light;
+          }
+        }
+
+        i {
+          text-align: center;
+
+          color: $color-dark;
+        }
+      }
+    }
+  }
+
+  &-body {
+    padding: 12px 15px 0 15px;
+
+    color: $color-light;
+    background-color: rgba($color-dark, 0.4);
+
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+
+    &__header-title {
+      margin-bottom: 8px;
+    }
+
+    &__type {
+      display: block;
+
+      margin: 15px 0;
+
+      line-height: 1.75rem;
+      p {
+        margin-bottom: 7px;
+      }
+    }
+
+    &__price {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1;
+
+      @media (min-width: 768px) {
+        p {
+          margin: 10px 0 8px;
+        }
+      }
+    }
+
+    &__actions {
+      padding: 15px;
+
+      &-btn {
+        display: block;
+
+        margin-top: 0 !important;
+        margin-bottom: 30px;
+        padding: 8px 5px 10px;
+
+        text-transform: uppercase;
+
+        border-color: $color-light;
+        background: transparent;
+
+        font-size: 1.15rem;
+        font-weight: 700;
+        &:hover {
+          background-color: rgba($color-light, 0.75);
+          i,
+          & {
+            color: $color-dark;
+          }
+        }
+
+        &--add-to-cart {
+          margin-bottom: 15px;
+          padding-bottom: 10px;
+
+          background-color: rgba($color-light, 0.2);
+          i {
+            margin-left: 5px;
+
+            font-size: 1rem;
+          }
+        }
+
+        @media (max-width: 1119px) {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

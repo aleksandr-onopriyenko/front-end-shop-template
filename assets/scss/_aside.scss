@@ -3,8 +3,14 @@
 .sidebar {
   &-form {
     padding: 15px 30px 30px;
+
     color: $color-light;
+
     font-size: 1.25rem;
+
+    @media (max-width: 992px) {
+      border-top: 1px solid $color-light;
+    }
 
     @media (min-width: 992px) {
       border-right: 1px solid $color-light;
@@ -22,19 +28,22 @@
 
     & legend {
       margin-bottom: 8px;
+
       font-weight: 700;
     }
 
     &-actions {
       &__show-more {
         display: block;
-        color: $color-light;
+
         margin-bottom: 30px;
+
+        color: $color-light;
       }
 
       &__btn {
-        background-color: $color-dark;
         border-color: $color-light;
+        background-color: $color-dark;
       }
     }
   }

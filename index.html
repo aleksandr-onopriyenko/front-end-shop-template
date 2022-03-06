@@ -10,10 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
   <title>SHOP-TEMPLATE</title>
   <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/img/icon-1.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css"
+    integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -56,11 +60,12 @@
               </li>
             </ul>
             <form class="form-inline">
-              <input class="form-control " type="search" placeholder="search" aria-label="Search">
+              <input class="form-control mr-sm-2" type="search" placeholder="search" aria-label="Search">
               <button class="btn" type="submit"><i class="fas fa-search"></i></button>
             </form>
             <button class="btn btn-cart">
               <i class="fas fa-shopping-cart"></i>
+              <span></span>
             </button>
           </div>
         </nav>
@@ -111,7 +116,476 @@
   <div class="content">
     <div class="container">
       <div class="row">
-        <main class="col-12 col-lg-9 order-lg-2">main</main>
+        <main class="col-12 col-lg-9 order-lg-2 main">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home page</a></li>
+              <li class="breadcrumb-item"><a href="#">Products</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Laptops and Tablets</li>
+            </ol>
+          </nav>
+
+          <div class="row">
+            <header class="main-header">
+              <div class="col-md-8">
+                <h1 class="main-header__title pl-0">Laptops and Tablets</h1>
+              </div>
+              <div class="col-md-4">
+                <select class="custom-select">
+                  <option selected>sort by price</option>
+                  <option value="1">sort by name</option>
+                  <option value="2">sort by date</option>
+                  <option value="3">sort by popularity</option>
+                </select>
+              </div>
+            </header>
+          </div>
+
+          <div class="main-cards">
+            <div class="row row-cols-1 row-cols-md-3">
+              <div class="col-md-4 main-cards-item">
+
+                <div class="card">
+
+                  <div class="card-top">
+                    <div class="card-top__image">
+                      <img src="assets/img/icon-17.png" class="card-top-img" alt="card image">
+                    </div>
+
+                    <div class="card-top__actions">
+                      <button type="button" class="btn my-2 my-sm-0 btn-secondary"><i
+                          class="fas fa-expand-arrows-alt"></i></button>
+                      <button type="button" class="btn my-2 my-sm-0 btn-secondary"><i class="fas fa-heart"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <header class="card-body__header">
+                      <h3 class="card-body__header-title p-0">#1 Device Name</h3>
+                      <p class="card-body__header-text m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      </p>
+                    </header>
+
+                    <div class="card-body__type">
+                      <p class=""><span class="text-uppercase font-weight-bold">TYPE:</span> Laptop</p>
+                      <p class=""><span class="text-uppercase font-weight-bold">SCREEN SIZE:</span> 7 inches
+                      </p>
+                      <p class=""><span class="text-uppercase font-weight-bold">RAM:</span> 1 GB</p>
+                    </div>
+
+                    <div class="card-body__price">
+                      <p class="text-center">$599 <sup>25</sup></p>
+                    </div>
+
+                    <div class="card-body__actions">
+                      <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
+                        details</button>
+                      <button type="button"
+                        class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                        to
+                        cart <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4 main-cards-item">
+
+                <div class="card">
+
+                  <div class="card-top">
+                    <div class="card-top__image">
+                      <img src="assets/img/icon-11.png" class="card-top-img" alt="card image">
+                    </div>
+
+                    <div class="card-top__actions btn-group-vertical">
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-expand-arrows-alt"></i></button>
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-heart"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <header class="card-body__header">
+                      <h3 class="card-body__header-title p-0">#2 Device Name</h3>
+                      <p class="card-body__header-text m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      </p>
+                    </header>
+
+                    <div class="card-body__type">
+                      <p class=""><span class="text-uppercase font-weight-bold">TYPE:</span> Laptop</p>
+                      <p class=""><span class="text-uppercase font-weight-bold">SCREEN SIZE:</span> 7 inches
+                      </p>
+                      <p class=""><span class="text-uppercase font-weight-bold">RAM:</span> 1 GB</p>
+                    </div>
+
+                    <div class="card-body__price">
+                      <p class="text-center">$1250 <sup>99</sup></p>
+                    </div>
+
+                    <div class="card-body__actions">
+                      <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
+                        details</button>
+                      <button type="button"
+                        class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                        to
+                        cart <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4 main-cards-item">
+
+                <div class="card">
+
+                  <div class="card-top">
+                    <div class="card-top__image">
+                      <img src="assets/img/icon-13.png" class="card-top-img" alt="card image">
+                    </div>
+
+                    <div class="card-top__actions btn-group-vertical">
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-expand-arrows-alt"></i></button>
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-heart"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <header class="card-body__header">
+                      <h3 class="card-body__header-title p-0">#3 Device Name</h3>
+                      <p class="card-body__header-text m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      </p>
+                    </header>
+
+                    <div class="card-body__type">
+                      <p class=""><span class="text-uppercase font-weight-bold">TYPE:</span> Laptop</p>
+                      <p class=""><span class="text-uppercase font-weight-bold">SCREEN SIZE:</span> 7 inches
+                      </p>
+                      <p class=""><span class="text-uppercase font-weight-bold">RAM:</span> 1 GB</p>
+                    </div>
+
+                    <div class="card-body__price">
+                      <p class="text-center">$399 <sup>50</sup></p>
+                    </div>
+
+                    <div class="card-body__actions">
+                      <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
+                        details</button>
+                      <button type="button"
+                        class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                        to
+                        cart <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4 main-cards-item">
+
+                <div class="card">
+
+                  <div class="card-top">
+                    <div class="card-top__image">
+                      <img src="assets/img/icon-17.png" class="card-top-img" alt="card image">
+                    </div>
+
+                    <div class="card-top__actions btn-group-vertical">
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-expand-arrows-alt"></i></button>
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-heart"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <header class="card-body__header">
+                      <h3 class="card-body__header-title p-0">#1 Device Name</h3>
+                      <p class="card-body__header-text m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      </p>
+                    </header>
+
+                    <div class="card-body__type">
+                      <p class=""><span class="text-uppercase font-weight-bold">TYPE:</span> Laptop</p>
+                      <p class=""><span class="text-uppercase font-weight-bold">SCREEN SIZE:</span> 7 inches
+                      </p>
+                      <p class=""><span class="text-uppercase font-weight-bold">RAM:</span> 1 GB</p>
+                    </div>
+
+                    <div class="card-body__price">
+                      <p class="text-center">$599 <sup>25</sup></p>
+                    </div>
+
+                    <div class="card-body__actions">
+                      <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
+                        details</button>
+                      <button type="button"
+                        class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                        to
+                        cart <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4 main-cards-item">
+
+                <div class="card">
+
+                  <div class="card-top">
+                    <div class="card-top__image">
+                      <img src="assets/img/icon-11.png" class="card-top-img" alt="card image">
+                    </div>
+
+                    <div class="card-top__actions btn-group-vertical">
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-expand-arrows-alt"></i></button>
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-heart"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <header class="card-body__header">
+                      <h3 class="card-body__header-title p-0">#2 Device Name</h3>
+                      <p class="card-body__header-text m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      </p>
+                    </header>
+
+                    <div class="card-body__type">
+                      <p class=""><span class="text-uppercase font-weight-bold">TYPE:</span> Laptop</p>
+                      <p class=""><span class="text-uppercase font-weight-bold">SCREEN SIZE:</span> 7 inches
+                      </p>
+                      <p class=""><span class="text-uppercase font-weight-bold">RAM:</span> 1 GB</p>
+                    </div>
+
+                    <div class="card-body__price">
+                      <p class="text-center">$1250 <sup>99</sup></p>
+                    </div>
+
+                    <div class="card-body__actions">
+                      <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
+                        details</button>
+                      <button type="button"
+                        class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                        to
+                        cart <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4 main-cards-item">
+
+                <div class="card">
+
+                  <div class="card-top">
+                    <div class="card-top__image">
+                      <img src="assets/img/icon-13.png" class="card-top-img" alt="card image">
+                    </div>
+
+                    <div class="card-top__actions btn-group-vertical">
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-expand-arrows-alt"></i></button>
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-heart"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <header class="card-body__header">
+                      <h3 class="card-body__header-title p-0">#3 Device Name</h3>
+                      <p class="card-body__header-text m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      </p>
+                    </header>
+
+                    <div class="card-body__type">
+                      <p class=""><span class="text-uppercase font-weight-bold">TYPE:</span> Laptop</p>
+                      <p class=""><span class="text-uppercase font-weight-bold">SCREEN SIZE:</span> 7 inches
+                      </p>
+                      <p class=""><span class="text-uppercase font-weight-bold">RAM:</span> 1 GB</p>
+                    </div>
+
+                    <div class="card-body__price">
+                      <p class="text-center">$399 <sup>50</sup></p>
+                    </div>
+
+                    <div class="card-body__actions">
+                      <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
+                        details</button>
+                      <button type="button"
+                        class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                        to
+                        cart <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4 main-cards-item">
+
+                <div class="card">
+
+                  <div class="card-top">
+                    <div class="card-top__image">
+                      <img src="assets/img/icon-17.png" class="card-top-img" alt="card image">
+                    </div>
+
+                    <div class="card-top__actions btn-group-vertical">
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-expand-arrows-alt"></i></button>
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-heart"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <header class="card-body__header">
+                      <h3 class="card-body__header-title p-0">#1 Device Name</h3>
+                      <p class="card-body__header-text m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      </p>
+                    </header>
+
+                    <div class="card-body__type">
+                      <p class=""><span class="text-uppercase font-weight-bold">TYPE:</span> Laptop</p>
+                      <p class=""><span class="text-uppercase font-weight-bold">SCREEN SIZE:</span> 7 inches
+                      </p>
+                      <p class=""><span class="text-uppercase font-weight-bold">RAM:</span> 1 GB</p>
+                    </div>
+
+                    <div class="card-body__price">
+                      <p class="text-center">$599 <sup>25</sup></p>
+                    </div>
+
+                    <div class="card-body__actions">
+                      <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
+                        details</button>
+                      <button type="button"
+                        class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                        to
+                        cart <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4 main-cards-item">
+
+                <div class="card">
+
+                  <div class="card-top">
+                    <div class="card-top__image">
+                      <img src="assets/img/icon-11.png" class="card-top-img" alt="card image">
+                    </div>
+
+                    <div class="card-top__actions btn-group-vertical">
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-expand-arrows-alt"></i></button>
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-heart"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <header class="card-body__header">
+                      <h3 class="card-body__header-title p-0">#2 Device Name</h3>
+                      <p class="card-body__header-text m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      </p>
+                    </header>
+
+                    <div class="card-body__type">
+                      <p class=""><span class="text-uppercase font-weight-bold">TYPE:</span> Laptop</p>
+                      <p class=""><span class="text-uppercase font-weight-bold">SCREEN SIZE:</span> 7 inches
+                      </p>
+                      <p class=""><span class="text-uppercase font-weight-bold">RAM:</span> 1 GB</p>
+                    </div>
+
+                    <div class="card-body__price">
+                      <p class="text-center">$1250 <sup>99</sup></p>
+                    </div>
+
+                    <div class="card-body__actions">
+                      <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
+                        details</button>
+                      <button type="button"
+                        class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                        to
+                        cart <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4 main-cards-item">
+
+                <div class="card">
+
+                  <div class="card-top">
+                    <div class="card-top__image">
+                      <img src="assets/img/icon-13.png" class="card-top-img" alt="card image">
+                    </div>
+
+                    <div class="card-top__actions btn-group-vertical">
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-expand-arrows-alt"></i></button>
+                      <button type="button" class="btn btn-secondary"><i class="fas fa-heart"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <header class="card-body__header">
+                      <h3 class="card-body__header-title p-0">#3 Device Name</h3>
+                      <p class="card-body__header-text m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      </p>
+                    </header>
+
+                    <div class="card-body__type">
+                      <p class=""><span class="text-uppercase font-weight-bold">TYPE:</span> Laptop</p>
+                      <p class=""><span class="text-uppercase font-weight-bold">SCREEN SIZE:</span> 7 inches
+                      </p>
+                      <p class=""><span class="text-uppercase font-weight-bold">RAM:</span> 1 GB</p>
+                    </div>
+
+                    <div class="card-body__price">
+                      <p class="text-center">$399 <sup>50</sup></p>
+                    </div>
+
+                    <div class="card-body__actions">
+                      <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
+                        details</button>
+                      <button type="button"
+                        class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                        to
+                        cart <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="main-cards-actions">
+            <h2 class="text-center font-weight-normal">
+              <a href="#">Load more...</a>
+            </h2>
+          </div>
+        </main>
         <aside class="col-12 col-lg-3 order-lg-1 sidebar">
           <form action="/" class="sidebar-form">
             <fieldset>
@@ -218,8 +692,9 @@
     </div>
   </div>
 
-
-
+  <footer class="footer">
+    <p class="footer-copyright text-center m-0">@ Copyright 2018</p>
+  </footer>
 
 
   <script src="libs/jquery/dist/jquery.min.js"></script>
