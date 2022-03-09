@@ -20,15 +20,10 @@
   }
 
   &-cards-actions {
-    margin-top: 5px;
-    padding-bottom: 26px;
-
-    @media (max-width: 768px) {
-      padding-bottom: 27px;
+    button {
+      font-size: 2rem;
     }
-    a {
-      color: $color-light;
-    }
+    margin-bottom: 30px;
   }
 }
 
@@ -105,17 +100,23 @@
     font-size: 1.25rem;
     line-height: 1.5rem;
 
-    &__header-title {
-      margin-bottom: 8px;
+    &__header {
+      margin-bottom: 15px;
+      &-title {
+        margin-bottom: 8px;
+      }
+      &-text {
+        margin-bottom: 15px;
+      }
     }
 
-    &__type {
+    &-type {
       display: block;
 
-      margin: 15px 0;
+      margin-bottom: 15px;
 
       line-height: 1.75rem;
-      p {
+      &__item {
         margin-bottom: 7px;
       }
     }
@@ -124,12 +125,6 @@
       font-size: 2rem;
       font-weight: 700;
       line-height: 1;
-
-      @media (min-width: 768px) {
-        p {
-          margin: 10px 0 8px;
-        }
-      }
     }
 
     &__actions {

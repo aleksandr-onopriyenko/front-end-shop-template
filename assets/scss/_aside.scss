@@ -33,15 +33,13 @@
     }
 
     &-actions {
-      &__show-more {
-        display: block;
-
-        margin-bottom: 30px;
-
+      .btn--transparent {
         color: $color-light;
+        font-size: 1.25rem;
       }
 
       &__btn {
+        font-size: 1rem;
         border-color: $color-light;
         background-color: $color-dark;
       }

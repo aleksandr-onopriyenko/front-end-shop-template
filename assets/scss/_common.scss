@@ -16,3 +16,24 @@ body {
   background: $color-dark url(../img/patt.png);
   background-position: 50% 0;
 }
+
+dt {
+  display: inline-block;
+  &:after {
+    content: ":";
+  }
+}
+dd {
+  display: inline-block;
+  margin-left: 0px;
+}
+
+.btn {
+  &--transparent {
+    background-color: transparent;
+    border: none;
+    color: $color-light;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+}
