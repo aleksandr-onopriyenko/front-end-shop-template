@@ -6427,6 +6427,10 @@ h1 {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.carousel-item__title {
+  font-size: 1.75rem;
+}
+
 *,
 *::after,
 *::before {
@@ -6474,6 +6478,10 @@ dd {
   width: 100%;
   margin: 0;
   margin-bottom: 30px;
+}
+.main-header__title {
+  font-size: 2.85rem;
+  color: #ffffff;
 }
 .main-cards-item {
   margin-bottom: 24px;
