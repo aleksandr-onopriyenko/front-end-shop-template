@@ -27,6 +27,13 @@
   &-cards-actions {
     button {
       font-size: 2rem;
+
+      &:before {
+        height: 3px;
+        left: 338px;
+        bottom: 34px;
+        width: 20.6%;
+      }
     }
     margin-bottom: 30px;
   }

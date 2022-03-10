@@ -36,6 +36,20 @@
       .btn--transparent {
         color: $color-light;
         font-size: 1.25rem;
+        position: relative;
+
+        &:before {
+          bottom: 3px;
+          height: 2px;
+          width: 100%;
+        }
+        &:hover {
+          color: #0056b3;
+          &:before {
+            background-color: #0056b3;
+            opacity: 1;
+          }
+        }
       }
 
       &__btn {
