@@ -6471,20 +6471,6 @@ dd {
   -o-transition: all 0s;
   transition: all 0s;
 }
-.btn--transparent:before {
-  display: block;
-  content: "";
-  background-color: #ffffff;
-  opacity: 0;
-  position: absolute;
-  left: 0;
-}
-.btn--transparent:hover {
-  color: #ffffff;
-}
-.btn--transparent:hover:before {
-  opacity: 1;
-}
 
 .main-header {
   display: -webkit-box;
@@ -6509,11 +6495,9 @@ dd {
 .main-cards-actions button {
   font-size: 2rem;
 }
-.main-cards-actions button:before {
-  height: 3px;
-  left: 338px;
-  bottom: 34px;
-  width: 20.6%;
+.main-cards-actions button:hover {
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 .card {
@@ -6648,19 +6632,10 @@ dd {
 .sidebar-form-actions .btn--transparent {
   color: #ffffff;
   font-size: 1.25rem;
-  position: relative;
-}
-.sidebar-form-actions .btn--transparent:before {
-  bottom: 3px;
-  height: 2px;
-  width: 100%;
 }
 .sidebar-form-actions .btn--transparent:hover {
   color: #0056b3;
-}
-.sidebar-form-actions .btn--transparent:hover:before {
-  background-color: #0056b3;
-  opacity: 1;
+  text-decoration: underline;
 }
 .sidebar-form-actions__btn {
   font-size: 1rem;

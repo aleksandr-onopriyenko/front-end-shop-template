@@ -7,12 +7,12 @@
 
     width: 100%;
     margin: 0;
-
     margin-bottom: 30px;
 
     &__title {
-      font-size: 2.85rem;
       color: $color-light;
+
+      font-size: 2.85rem;
     }
 
     @media (max-width: 768px) {
@@ -25,17 +25,16 @@
   }
 
   &-cards-actions {
+    margin-bottom: 30px;
     button {
       font-size: 2rem;
 
-      &:before {
-        height: 3px;
-        left: 338px;
-        bottom: 34px;
-        width: 20.6%;
+      &:hover {
+        text-decoration: underline;
+
+        color: $color-light;
       }
     }
-    margin-bottom: 30px;
   }
 }
 
