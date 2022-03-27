@@ -141,7 +141,8 @@
     &__actions {
       padding: 15px;
 
-      &-btn {
+      &-btn,
+      &-btn:disabled {
         display: block;
 
         margin-top: 0 !important;
@@ -150,16 +151,19 @@
 
         text-transform: uppercase;
 
+        opacity: 1;
         border-color: $color-light;
         background: transparent;
 
         font-size: 1.15rem;
         font-weight: 700;
-        &:hover {
+
+        &:hover,
+        &:focus {
           background-color: rgba($color-light, 0.75);
           i,
           & {
-            color: $color-dark;
+            color: $color-dark !important;
           }
         }
 
@@ -168,6 +172,12 @@
           padding-bottom: 10px;
 
           background-color: rgba($color-light, 0.2);
+
+          &.active {
+            i {
+              display: none;
+            }
+          }
           i {
             margin-left: 5px;
 

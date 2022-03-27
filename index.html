@@ -62,14 +62,27 @@
               <input class="form-control mr-sm-2" type="search" placeholder="search" aria-label="Search">
               <button class="btn" type="submit"><i class="fas fa-search"></i></button>
             </form>
-            <button class="btn btn-cart">
+            <button class="btn btn-cart" data-toggle="modal" data-target="#exampleModal">
               <i class="fas fa-shopping-cart"></i>
-              <span></span>
+              <span class="count-cart"></span>
             </button>
           </div>
         </nav>
       </div>
     </div>
+
+    <div class="basket">
+      <p class="basket-title">В корзине <span class="basket-count">0</span> товаров</p>
+      <ul class="basket-list d-none">
+      </ul>
+      <p class="basket-price d-none">Всего в корзине товаров на сумму <span class="basket-total">0</span>$</p>
+      <div class="basket-actions btn-group">
+        <button type="button" class="btn btn-primary btn-next">Продолжить покупки</button>
+        <button type="button" class="btn btn-primary btn-reset btn-none">Очистить корзину</button>
+        <button type="button" class="btn btn-primary btn-checkout btn-none">Оформить заказ</button>
+      </div>
+    </div>
+
     <div class="header-carousel">
       <div class="container">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -140,7 +153,7 @@
             </header>
           </div>
 
-          <div class="row row-cols-1 row-cols-md-3">
+          <div class="row row-cols-1 row-cols-md-3 main-cards">
             <div class="col-md-4 main-cards-item">
               <div class="card">
                 <div class="card-top">
@@ -182,7 +195,8 @@
                     <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
                       details</button>
                     <button type="button"
-                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart btn-add"
+                      data-art="0">Add
                       to
                       cart <i class="fas fa-shopping-cart"></i></button>
                   </div>
@@ -230,7 +244,8 @@
                     <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
                       details</button>
                     <button type="button"
-                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart btn-add"
+                      data-art="1">Add
                       to
                       cart <i class="fas fa-shopping-cart"></i></button>
                   </div>
@@ -277,7 +292,8 @@
                     <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
                       details</button>
                     <button type="button"
-                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart btn-add"
+                      data-art="2">Add
                       to
                       cart <i class="fas fa-shopping-cart"></i></button>
                   </div>
@@ -326,7 +342,8 @@
                     <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
                       details</button>
                     <button type="button"
-                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart btn-add"
+                      data-art="0">Add
                       to
                       cart <i class="fas fa-shopping-cart"></i></button>
                   </div>
@@ -342,7 +359,7 @@
                   </div>
                   <div class="card-top__actions btn-group-vertical">
                     <button type="button" class="btn btn-secondary"><i class="fas fa-expand-arrows-alt"></i></button>
-                    <button type="button" class="btn btn-secondary"><i class="fas fa-heart"></i></button>
+                    <button type="button" class="btn  btn-secondary"><i class="fas fa-heart"></i></button>
                   </div>
                 </div>
                 <div class="card-body">
@@ -374,7 +391,8 @@
                     <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
                       details</button>
                     <button type="button"
-                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart btn-add"
+                      data-art="1">Add
                       to
                       cart <i class="fas fa-shopping-cart"></i></button>
                   </div>
@@ -421,7 +439,8 @@
                     <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
                       details</button>
                     <button type="button"
-                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart btn-add"
+                      data-art="2">Add
                       to
                       cart <i class="fas fa-shopping-cart"></i></button>
                   </div>
@@ -469,7 +488,8 @@
                     <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
                       details</button>
                     <button type="button"
-                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart btn-add"
+                      data-art="0">Add
                       to
                       cart <i class="fas fa-shopping-cart"></i></button>
                   </div>
@@ -485,7 +505,7 @@
                   </div>
                   <div class="card-top__actions btn-group-vertical">
                     <button type="button" class="btn btn-secondary"><i class="fas fa-expand-arrows-alt"></i></button>
-                    <button type="button" class="btn btn-secondary"><i class="fas fa-heart"></i></button>
+                    <button type="button" class="btn  btn-secondary"><i class="fas fa-heart"></i></button>
                   </div>
                 </div>
                 <div class="card-body">
@@ -517,7 +537,8 @@
                     <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
                       details</button>
                     <button type="button"
-                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart btn-add"
+                      data-art="1">Add
                       to
                       cart <i class="fas fa-shopping-cart"></i></button>
                   </div>
@@ -532,7 +553,7 @@
                   </div>
                   <div class="card-top__actions btn-group-vertical">
                     <button type="button" class="btn btn-secondary"><i class="fas fa-expand-arrows-alt"></i></button>
-                    <button type="button" class="btn btn-secondary"><i class="fas fa-heart"></i></button>
+                    <button type="button" class="btn  btn-secondary"><i class="fas fa-heart"></i></button>
                   </div>
                 </div>
                 <div class="card-body">
@@ -564,7 +585,8 @@
                     <button type="button" class="btn btn-block btn-secondary card-body__actions-btn">More
                       details</button>
                     <button type="button"
-                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart">Add
+                      class="btn btn-block btn-secondary card-body__actions-btn  card-body__actions-btn--add-to-cart btn-add"
+                      data-art="2">Add
                       to
                       cart <i class="fas fa-shopping-cart"></i></button>
                   </div>
@@ -692,7 +714,7 @@
   <script src="libs/jquery/dist/jquery.min.js"></script>
   <script src="libs/popper.js/dist/umd/popper.min.js"></script>
   <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" type="module"></script>
 </body>
 
 </html>

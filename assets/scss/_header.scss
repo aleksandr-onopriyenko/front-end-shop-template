@@ -13,3 +13,120 @@
 .carousel-item__title {
   font-size: 1.75rem;
 }
+
+.btn-cart {
+  position: relative;
+}
+
+.count-cart {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  // display: block;
+
+  display: none;
+
+  width: 24px;
+  height: 24px;
+
+  transition: background 0.3s, color 0.3s;
+
+  color: $color-light;
+  border-radius: 100%;
+  background-color: $color-dark;
+  box-shadow: 0 0 5px rgba(#000000, 0.75);
+
+  font-size: 1rem;
+
+  &.active {
+    display: block;
+  }
+
+  &:hover {
+    color: $color-dark;
+    background-color: $color-light;
+  }
+}
+
+.basket {
+  position: absolute;
+  z-index: 1000;
+  top: 102px;
+  right: 0;
+
+  display: none;
+
+  padding: 10px;
+
+  color: #000000;
+  border: 1px solid $color-dark;
+  border-radius: 8px;
+  background-color: #96c8f1;
+
+  font-size: 1rem;
+
+  &.active {
+    display: block;
+  }
+
+  &-title {
+    text-align: center;
+  }
+  &-price {
+    text-align: center;
+  }
+  &-actions {
+    display: flex;
+
+    gap: 10px;
+    .btn {
+      cursor: pointer;
+
+      border-radius: 4px;
+
+      &-none {
+        display: none;
+      }
+    }
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-bottom: 10px;
+
+      gap: 40px;
+    }
+
+    button {
+      position: relative;
+      z-index: 1000;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 12px;
+      height: 24px;
+
+      border-radius: 4px;
+
+      font-family: "Font Awesome 5 Free";
+      font-size: 0.75rem;
+      &:before {
+        display: block;
+
+        content: "\f00d";
+
+        font-weight: 900;
+      }
+    }
+  }
+}

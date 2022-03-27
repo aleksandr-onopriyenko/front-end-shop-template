@@ -1,0 +1,32 @@
+{
+  "01": {
+  "name": "#1 Device Name",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+  "type": "Laptop",
+  "screenSize": "7 inches",
+  "ram": "1 GB",
+  "price": 599.25,
+  "count": 0,
+  "article": 0
+  },
+  "02": {
+    "name": "#2 Device Name",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "type": "Laptop",
+    "screenSize": "7 inches",
+    "ram": "1 GB",
+    "price": 1250.99,
+    "count": 0,
+    "article": 1
+  },
+  "03": {
+    "name": "#3 Device Name",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "type": "Laptop",
+    "screenSize": "7 inches",
+    "ram": "1 GB",
+    "price": 399.50,
+    "count": 0,
+    "article": 2
+  }
+}
