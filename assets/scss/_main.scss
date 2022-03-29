@@ -141,8 +141,14 @@
     &__actions {
       padding: 15px;
 
-      &-btn,
       &-btn:disabled {
+        opacity: 1;
+        background-color: rgba($color-light, 0.2);
+        border-color: inherit;
+        color: inherit;
+      }
+
+      &-btn {
         display: block;
 
         margin-top: 0 !important;
